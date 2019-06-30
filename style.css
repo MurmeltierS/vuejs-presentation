@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700&display=swap');
+
+* {
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
+    padding 0;
+}
+
+html,
+body,
+#app {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app {
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+
+.page {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: #2975f2;*/
+    background-color: #fff;
+    color: #000;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.page h1 {
+    padding: 35px;
+    font-size: 60px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.contents {
+    padding: 0 35px;
+    width: calc(100vw - 70px);
+    font-size: 32px;
+
+}
+
+.contents img {
+    max-height: calc(80vh - 140px);
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+.graphic {
+    margin: 35px 35px 70px 35px;
+    width: calc(100vw - 70px);
+    height: calc(100vh - 140px - 105px - 10px);
+    object-fit: contain;
+    object-position: left;
+}
+
+.title {
+    height: calc(100% - 70px);
+    width: calc(100% - 70px);
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.dbin {
+    width: 70%;
+    padding: 15px 5px;
+}
+
+
+.list-item {
+    line-height: 1.4em;
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 1s;
+}
+
+.list-enter,
+.list-leave-to
+
+/* .list-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1.5s;
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
+}
+
+.slideleft-enter {
+    transform: translate(100vw, 0px);
+}
+
+.slideleft-leave-active {
+    transform: translate(-100vw, 0px);
+}
+
+.slideright-enter {
+    transform: translate(-100vw, 0px);
+    z-index: 300;
+}
+
+.slideright-leave-active {
+    transform: translate(100vw, 0px);
+    z-index: 200;
+}
+
+.timer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  height: 10px;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.sec{
+  height: 10px;
+  background: #27c27c;
+  transition: all 1s linear;
+}
+
+.wotanken{
+  border: 0;
+  width: 400px;
+  height: 500px;
+}

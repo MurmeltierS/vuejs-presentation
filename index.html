@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Präsentationsprüfung</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="app" v-bind:style="{ background: pages[pointer].style.background}">
+  <presentation-page v-for="page in pages" v-bind:page="page" v-bind:key="page.id"></presentation-page>
+  <presentation-timer ref="timer"></presentation-timer>
+</div>
+  <script src='http://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
